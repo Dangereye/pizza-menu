@@ -2,18 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 // Components
-import Pizza from './components/Pizza';
-
-// Data
-import { pizzaData } from './data/pizzaData';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
     <div>
-      <h1>Pizza menu</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 }
