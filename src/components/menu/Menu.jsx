@@ -1,16 +1,16 @@
 // Components
-import Pizza from './Pizza';
+import Pizza from '../pizza/Pizza';
 
 // Data
-import { pizzaData } from '../data/pizzaData';
+import { pizzaData } from '../../data/pizzaData';
 
 export default function Menu() {
   return (
-    <div>
+    <main className='menu'>
       <h2>Our menu</h2>
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
+    </main>
   );
 }

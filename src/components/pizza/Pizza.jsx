@@ -1,8 +1,8 @@
 export default function Pizza() {
   return (
-    <div>
+    <div className='pizza'>
       <img src='images/pizzas/focaccia.jpg' alt='Focaccia' />
-      <h2>Focaccia</h2>
+      <h3>Focaccia</h3>
       <p>Bread with italian olive oil and rosemary</p>
     </div>
   );
