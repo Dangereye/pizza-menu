@@ -8,14 +8,11 @@ export default function Menu() {
   return (
     <main className='menu'>
       <h2>Our menu</h2>
-      {pizzaData.map((pizza, i) => (
-        <Pizza
-          name={pizza.name}
-          photoName={pizza.photoName}
-          ingredients={pizza.ingredients}
-          price={pizza.price}
-        />
-      ))}
+      <ul className='pizzas'>
+        {pizzaData.map((pizza, i) => (
+          <Pizza pizza={pizza} key={pizza.name} />
+        ))}
+      </ul>
     </main>
   );
 }
