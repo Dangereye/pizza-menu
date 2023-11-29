@@ -1,4 +1,5 @@
 export default function Pizza({ pizza }) {
+  if (pizza.soldOut) return null;
   return (
     <li className='pizza'>
       <img src={`images/${pizza.photoName}`} alt={pizza.name} />
